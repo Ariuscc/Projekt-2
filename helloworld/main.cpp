@@ -51,10 +51,7 @@ int main(){
 
     liczba[p].pushback(tasmociag);
     liczba[p].wyswietlanie();
-    for(int j=0;j<k;j++){
-       std::cout<< tasmociag.front();
-       tasmociag.pop(); 
-    }p++;
+    p++;
     }
     
 
