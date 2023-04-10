@@ -11,16 +11,14 @@ class stos{
 
 private:
 
-int n=10+rand()%10;
-std::stack <float> zawartosc;
-float waga_max=0;
+int n;
 public:
+std::stack <float> zawartosc;
 void pushback (std::queue <float> tasmociag){
-n = n - tasmociag.front();
-while (n>=0)
+n =10+rand()%10;;
+while (n>=0 && tasmociag.empty()==false)
 {
-zawartosc.push(tasmociag.front());
-tasmociag.pop();
+zawartosc.push(tasmociag.front());  
 n= n - tasmociag.front();
 }}
 void wyswietlanie (){
