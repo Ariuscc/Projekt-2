@@ -11,18 +11,21 @@ class stos{
 
 private:
 
-int n;
 public:
+int n;
+int m;
 std::stack <float> zawartosc;
 void pushback (std::queue <float> tasmociag){
-n =10+rand()%10;;
+n =10+rand()%10;
+m=n;
 while (n>=0 && tasmociag.empty()==false)
 {
 zawartosc.push(tasmociag.front());  
 n= n - tasmociag.front();
+tasmociag.pop();
 }}
 void wyswietlanie (){
-    std::cout<<"Ladownosc auta "<<n<<'\n';
+    std::cout<<"Ladownosc auta "<<m<<'\n';
     while(zawartosc.empty()==false){
         std::cout<<zawartosc.top();
         zawartosc.pop();
