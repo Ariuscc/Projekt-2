@@ -17,13 +17,13 @@ int m;
 std::stack <float> zawartosc;
 void pushback (std::queue <float> tasmociag){
 n =10+rand()%10;
-m=n;
 while (n>=0 && tasmociag.empty()==false)
-{
-zawartosc.push(tasmociag.front());  
+{ 
 n= n - tasmociag.front();
+if (n>=0) {
+zawartosc.push(tasmociag.front());  
 tasmociag.pop();
-}}
+}}}
 void wyswietlanie (){
     std::cout<<"Ladownosc auta "<<m<<'\n';
     while(zawartosc.empty()==false){
