@@ -17,6 +17,7 @@ int m;
 std::stack <float> zawartosc;
 void pushback (std::queue <float> tasmociag){
 n =10+rand()%10;
+m=n;
 while (n>=0 && tasmociag.empty()==false)
 { 
 n= n - tasmociag.front();
